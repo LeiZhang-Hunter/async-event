@@ -1,0 +1,39 @@
+{
+  "name": "awheel/awheel",
+  "description": "Awheel framework",
+  "license": "MIT",
+  "homepage": "http://awheel.com",
+  "authors": [
+    {
+      "name": "fengqi",
+      "email": "lyf362345@gmail.com"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {
+    "php": ">=5.4.0",
+    "aliyunmq/mq-http-sdk": ">=1.0.0",
+    "awheel/framework": "1.5.*",
+    "awheel/medoo-model": "^1.5",
+    "awheel/cache-component": "^1.5",
+    "awheel/view-blade": "^1.5",
+    "awheel/view-single": "^1.5",
+    "awheel/redis-lock": "^0.1.0",
+    "jeremeamia/superclosure": "^2.4",
+    "guzzlehttp/guzzle": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Component\\": "src/Component/",
+      "Sdk\\": "src/Sdk/"
+    }
+  },
+  "config": {
+    "prefer-source": false,
+    "prefer-dist": true,
+    "secure-http": false
+  },
+  "require-dev": {
+    "mockery/mockery": "^1.3"
+  }
+}
